@@ -1,0 +1,17 @@
+$ time sam local invoke -e events/pedido.json   (execução 1)
+
+No current session found, using default AWS::AccountId
+Invoking app.lambda_handler (python3.12)
+Local image was not found.
+Removing rapid images for repo public.ecr.aws/sam/emulation-python3.12
+Building image............................................................................................
+Using local image: public.ecr.aws/lambda/python:3.12-rapid-x86_64.
+
+Mounting /home/runner/work/rota-vital-guias-serverless/rota-vital-guias-serverless/.aws-sam/build/GuiaTransporteFunction as /var/task:ro,delegated, inside runtime container
+SAM_CONTAINER_ID: 4f1264667f564391d20d15933b567a691996cb67929b60462b1a9b8acbbe900d
+START RequestId: 93d62eaa-6926-40fa-a0f4-177a4cb4313c Version: $LATEST
+END RequestId: 93d62eaa-6926-40fa-a0f4-177a4cb4313c
+REPORT RequestId: 93d62eaa-6926-40fa-a0f4-177a4cb4313c	Init Duration: 0.03 ms	Duration: 40.05 ms	Billed Duration: 41 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+{"statusCode": 201, "body": "{\"guia\": \"G-R-001\", \"hospital\": \"H-Recife\", \"bolsas\": [\"O-NEG-0142\"], \"invocacaoNesteAmbiente\": 1}"}
+[ERROR] [1795538965914] LAMBDA_RUNTIME Failed to get next invocation. No Response from endpoint
+tempo real: 14.467 s

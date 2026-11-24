@@ -1,0 +1,38 @@
+name: Experimentos serverless (SAM local)
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["evidencias/**", "README.md"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  experimentos:
+    runs-on: ubuntu-latest
+    env:
+      AWS_DEFAULT_REGION: us-east-1
+      SAM_CLI_TELEMETRY: "0"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: aws-actions/setup-sam@v2
+        with:
+          use-installer: true
+
+      - name: Dependências dos testes
+        run: pip install pytest
+
+      - name: Rodar os passos da atividade
+        run: bash scripts/experimentos.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: evidencias
+          path: evidencias/

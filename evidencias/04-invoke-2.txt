@@ -1,0 +1,14 @@
+$ time sam local invoke -e events/pedido.json   (execução 2)
+
+No current session found, using default AWS::AccountId
+Invoking app.lambda_handler (python3.12)
+Local image is up-to-date
+Using local image: public.ecr.aws/lambda/python:3.12-rapid-x86_64.
+
+Mounting /home/runner/work/rota-vital-guias-serverless/rota-vital-guias-serverless/.aws-sam/build/GuiaTransporteFunction as /var/task:ro,delegated, inside runtime container
+SAM_CONTAINER_ID: 03c70a06d6a0de8b2d3b0ff93297f1ccef705706b5c9fa617fb08730041176b1
+START RequestId: 5876d125-23e1-4ac8-a4d4-9ffeb9591e2f Version: $LATEST
+END RequestId: 5876d125-23e1-4ac8-a4d4-9ffeb9591e2f
+REPORT RequestId: 5876d125-23e1-4ac8-a4d4-9ffeb9591e2f	Init Duration: 0.02 ms	Duration: 39.49 ms	Billed Duration: 40 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+{"statusCode": 201, "body": "{\"guia\": \"G-R-001\", \"hospital\": \"H-Recife\", \"bolsas\": [\"O-NEG-0142\"], \"invocacaoNesteAmbiente\": 1}"}
+tempo real: 2.102 s

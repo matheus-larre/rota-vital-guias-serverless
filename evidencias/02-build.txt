@@ -1,0 +1,22 @@
+$ sam build
+
+Starting Build use cache
+Manifest file is changed (new hash: d41d8cd98f00b204e9800998ecf8427e) or dependency folder (.aws-sam/deps/01f7f6a7-b700-4d8d-91b6-ba7bfcf75080) is missing for (GuiaTransporteFunction), downloading dependencies and copying/building source
+Building codeuri: /home/runner/work/rota-vital-guias-serverless/rota-vital-guias-serverless/hello_world runtime: python3.12 architecture: x86_64 functions: GuiaTransporteFunction
+ Running PythonPipBuilder:CleanUp
+ Running PythonPipBuilder:ResolveDependencies
+ Running PythonPipBuilder:CopySource
+Skipping copy operation since source .aws-sam/deps/01f7f6a7-b700-4d8d-91b6-ba7bfcf75080 does not exist
+ Running PythonPipBuilder:CopySource
+
+Build Succeeded
+
+Built Artifacts  : .aws-sam/build
+Built Template   : .aws-sam/build/template.yaml
+
+Commands you can use next
+=========================
+[*] Validate SAM template: sam validate
+[*] Invoke Function: sam local invoke
+[*] Test Function in the Cloud: sam sync --stack-name {{stack-name}} --watch
+[*] Deploy: sam deploy --guided

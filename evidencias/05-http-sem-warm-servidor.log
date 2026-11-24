@@ -1,0 +1,41 @@
+No current session found, using default AWS::AccountId
+Mounting GuiaTransporteFunction at http://127.0.0.1:3000/guias [POST]
+You can now browse to the above endpoints to invoke your functions. You do not need to restart/reload SAM CLI while working on your functions, changes will be reflected instantly/automatically. If you used sam build before running local commands, you will need to re-run sam build for the changes to be picked up. You only need to restart SAM CLI if you update your AWS SAM template
+2026-11-24 16:49:29 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2026-11-24 16:49:29 [33mPress CTRL+C to quit[0m
+2026-11-24 16:49:29 127.0.0.1 - - [24/Nov/2026 16:49:29] "[31m[1mGET /guias HTTP/1.1[0m" 403 -
+Invoking app.lambda_handler (python3.12)
+Local image is up-to-date
+Using local image: public.ecr.aws/lambda/python:3.12-rapid-x86_64.
+
+Mounting /home/runner/work/rota-vital-guias-serverless/rota-vital-guias-serverless/.aws-sam/build/GuiaTransporteFunction as /var/task:ro,delegated, inside runtime container
+SAM_CONTAINER_ID: f268c4bb91b55ec3cdd2c1f3e09087b8533b3a9f4221ab55470b9cbac574e22d
+START RequestId: 4fe41ac9-b29e-4ed0-9969-5305a35390de Version: $LATEST
+END RequestId: 4fe41ac9-b29e-4ed0-9969-5305a35390de
+REPORT RequestId: 4fe41ac9-b29e-4ed0-9969-5305a35390de	Init Duration: 0.03 ms	Duration: 39.63 ms	Billed Duration: 40 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+No Content-Type given. Defaulting to 'application/json'.
+2026-11-24 16:49:30 127.0.0.1 - - [24/Nov/2026 16:49:30] "[35m[1mPOST /guias HTTP/1.1[0m" 201 -
+Invoking app.lambda_handler (python3.12)
+Using local image: public.ecr.aws/lambda/python:3.12-rapid-x86_64.
+
+Mounting /home/runner/work/rota-vital-guias-serverless/rota-vital-guias-serverless/.aws-sam/build/GuiaTransporteFunction as /var/task:ro,delegated, inside runtime container
+SAM_CONTAINER_ID: eb6be29a265b1bf494dfdb1e118aa833fff973d4c446689b660c599cc7e5f194
+START RequestId: c58f2438-ab7a-4ddb-9ceb-fa282ba2ed53 Version: $LATEST
+END RequestId: c58f2438-ab7a-4ddb-9ceb-fa282ba2ed53
+REPORT RequestId: c58f2438-ab7a-4ddb-9ceb-fa282ba2ed53	Init Duration: 0.43 ms	Duration: 48.34 ms	Billed Duration: 49 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+No Content-Type given. Defaulting to 'application/json'.
+2026-11-24 16:49:30 127.0.0.1 - - [24/Nov/2026 16:49:30] "[35m[1mPOST /guias HTTP/1.1[0m" 201 -
+Invoking app.lambda_handler (python3.12)
+Using local image: public.ecr.aws/lambda/python:3.12-rapid-x86_64.
+
+Mounting /home/runner/work/rota-vital-guias-serverless/rota-vital-guias-serverless/.aws-sam/build/GuiaTransporteFunction as /var/task:ro,delegated, inside runtime container
+SAM_CONTAINER_ID: 325989460d7536790348636eb81f41b34f3c10a8dfc12613f95ce61d05c2f139
+START RequestId: 79b28383-7fb5-4de7-96b0-2ab520495554 Version: $LATEST
+END RequestId: 79b28383-7fb5-4de7-96b0-2ab520495554
+REPORT RequestId: 79b28383-7fb5-4de7-96b0-2ab520495554	Init Duration: 0.03 ms	Duration: 45.32 ms	Billed Duration: 46 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+No Content-Type given. Defaulting to 'application/json'.
+2026-11-24 16:49:31 127.0.0.1 - - [24/Nov/2026 16:49:31] "[35m[1mPOST /guias HTTP/1.1[0m" 201 -

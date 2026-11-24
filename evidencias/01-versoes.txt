@@ -1,0 +1,6 @@
+$ sam --version; docker --version; python --version
+
+SAM CLI, version 1.174.0
+Docker version 29.4.2, build 055a478
+Python 3.12.16
+Linux runnervm0hi8g 7.0.0-1020-azure #21-Ubuntu SMP PREEMPT Tue Oct 27 22:34:38 UTC 2026 x86_64 GNU/Linux

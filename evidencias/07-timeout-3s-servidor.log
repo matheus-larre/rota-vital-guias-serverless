@@ -1,0 +1,45 @@
+No current session found, using default AWS::AccountId
+Mounting GuiaTransporteFunction at http://127.0.0.1:3000/guias [POST]
+You can now browse to the above endpoints to invoke your functions. You do not need to restart/reload SAM CLI while working on your functions, changes will be reflected instantly/automatically. If you used sam build before running local commands, you will need to re-run sam build for the changes to be picked up. You only need to restart SAM CLI if you update your AWS SAM template
+2026-11-24 16:49:32 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2026-11-24 16:49:32 [33mPress CTRL+C to quit[0m
+2026-11-24 16:49:32 127.0.0.1 - - [24/Nov/2026 16:49:32] "[31m[1mGET /guias HTTP/1.1[0m" 403 -
+Invoking app.lambda_handler (python3.12)
+Local image is up-to-date
+Using local image: public.ecr.aws/lambda/python:3.12-rapid-x86_64.
+
+Mounting /home/runner/work/rota-vital-guias-serverless/rota-vital-guias-serverless/.aws-sam/build/GuiaTransporteFunction as /var/task:ro,delegated, inside runtime container
+SAM_CONTAINER_ID: 010e7031da6eb7f106ba7ddc77738952b143c8b1f307be662926dc405340f236
+START RequestId: c40afd15-8ea1-4496-8636-d183c4d85540 Version: $LATEST
+END RequestId: c40afd15-8ea1-4496-8636-d183c4d85540
+REPORT RequestId: c40afd15-8ea1-4496-8636-d183c4d85540	Init Duration: 0.02 ms	Duration: 39.05 ms	Billed Duration: 40 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+No Content-Type given. Defaulting to 'application/json'.
+2026-11-24 16:49:33 127.0.0.1 - - [24/Nov/2026 16:49:33] "[35m[1mPOST /guias HTTP/1.1[0m" 201 -
+Invoking app.lambda_handler (python3.12)
+Lambda function 'GuiaTransporteFunction' is already running
+START RequestId: c853d5bd-5cb7-4198-9c17-85fe0da40df7 Version: $LATEST
+END RequestId: c853d5bd-5cb7-4198-9c17-85fe0da40df7
+REPORT RequestId: c853d5bd-5cb7-4198-9c17-85fe0da40df7	Duration: 1.22 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+No Content-Type given. Defaulting to 'application/json'.
+2026-11-24 16:49:33 127.0.0.1 - - [24/Nov/2026 16:49:33] "[35m[1mPOST /guias HTTP/1.1[0m" 201 -
+Invoking app.lambda_handler (python3.12)
+Lambda function 'GuiaTransporteFunction' is already running
+START RequestId: 2b3fec3e-692b-4317-b3de-6ec2123dd653 Version: $LATEST
+END RequestId: 2b3fec3e-692b-4317-b3de-6ec2123dd653
+REPORT RequestId: 2b3fec3e-692b-4317-b3de-6ec2123dd653	Duration: 1.13 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+No Content-Type given. Defaulting to 'application/json'.
+2026-11-24 16:49:33 127.0.0.1 - - [24/Nov/2026 16:49:33] "[35m[1mPOST /guias HTTP/1.1[0m" 201 -
+Invoking app.lambda_handler (python3.12)
+Lambda function 'GuiaTransporteFunction' is already running
+START RequestId: 0390f7b3-551c-4b05-80ff-97027cfca087 Version: $LATEST
+Function 'GuiaTransporteFunction' timed out after 3 seconds
+24 Nov 2026 16:49:36,146 [ERROR] (rapid) Invoke failed error=errResetReceived InvokeID=0390f7b3-551c-4b05-80ff-97027cfca087
+END RequestId: 0390f7b3-551c-4b05-80ff-97027cfca087
+REPORT RequestId: 0390f7b3-551c-4b05-80ff-97027cfca087	Duration: 3000.00 ms	Billed Duration: 3000 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
+Invalid lambda response received: Lambda response must be valid json
+2026-11-24 16:49:36 127.0.0.1 - - [24/Nov/2026 16:49:36] "[35m[1mPOST /guias HTTP/1.1[0m" 502 -
